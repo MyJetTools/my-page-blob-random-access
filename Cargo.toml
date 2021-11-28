@@ -1,0 +1,13 @@
+[package]
+name = "my-azure-page-blob-random-access"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+my-azure-storage-sdk = { branch = "main", git = "https://github.com/MyJetTools/my-azure-storage.git" }
+my-azure-page-blob = { branch = "main", git = "https://github.com/MyJetTools/my-azure-page-blob.git" }
+rust-extensions = { branch = "main", git = "https://github.com/MyJetTools/rust-extensions.git" }
+tokio = { version = "*", features = ["full"] }
+tokio-util = "*"
