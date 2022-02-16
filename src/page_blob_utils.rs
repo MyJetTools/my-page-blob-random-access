@@ -7,3 +7,7 @@ pub fn get_position_within_page(page_blob_position: usize, page_size: usize) -> 
 pub fn get_page_no_from_page_blob_position(page_blob_position: usize, page_size: usize) -> usize {
     return page_blob_position / page_size;
 }
+
+pub fn get_required_pages_amount(page_blob_position: usize, page_size: usize) -> usize {
+    return (page_blob_position - 1) / page_size + 1;
+}
